@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700" rel="stylesheet">
+
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+    <script src="assets/javascript/game.js"></script>
+
+    <title>Gems Game</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="title">Crystals Collector!</h1>
+            <p class="text">
+                Each Crystal below has a different value. The goal of the game is to reach the given random number by clicking
+                on the different Crystal. Note that each time the game starts again a new value will be assigned to each Crystal.
+            </p>
+            <div class="btn-group col-md-offset-5" role="group">
+                    <button type="button" id = "play-again" class="btn btn-default btn-lg btn-info">Play Again</button>
+                    <button type="button" id = "reset" class="btn btn-default btn-lg btn-danger">Reset</button>
+                </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="row">
+                    <div id="score" class="col-md-11 well well-lg ">
+                        <p class="titulo">Your total score</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="totalScore" class="col-md-11 well well-lg">
+                        <p class="titulo"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="row">
+                    <div id="numb" class="col-md-11 well well-lg">
+                        <p class="titulo">Random Number to match</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="randomNumb" class="col-md-11 title well well-lg">
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="row">
+                    <div id="results" class="col-md-11 title well well-lg">
+                        <p class="titulo">Results</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="gameResults" class="col-md-11 title well well-lg">
+                        <p id = "wins" class="titulo"> Wins: </p>
+                        <p id = "loss" class="titulo"> Losses: </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 col-md-offset-3 gems">
+            <div id = "diamond" class="col-md-1">
+                <img  src="assets/images/diamond.jpg" alt="Diamond">
+            </div>
+            <div id = "blueSaphire" class="col-md-1 ">
+                <img  src="assets/images/gemblue.jpg" alt="Blue Saphire">
+            </div>
+            <div id = "redSaphire" class="col-md-1 ">
+                <img  src="assets/images/gemred.jpg" alt="Red Saphire">
+            </div>
+            <div id = "saphire" class="col-md-1 ">
+                <img  src="assets/images/sapphire.jpg" alt="Saphire">
+            </div>
+            </div>
+        </div>
+
+</body>
+
+</html>
