@@ -22,19 +22,23 @@
     font-size: 20px;
 }
 
+.square{
+    width: 100%;
+
+}
+
 #score{
-    height: 20px;
     background:  #004f99;
 
 }
 
 #numb{
-    height: 20px;
     background:  #0077e6;
 }
 
+
+
 #results{
-    height: 20px;
     background:  #1a90ff;
 }
 
