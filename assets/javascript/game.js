@@ -43,16 +43,19 @@ $(document).ready(function () {
     });
     
 
+
     //game logic
 
     function gameLogic() {
         if (sum === randomNumber) {
-            alert("You Win!")
+            setTimeout(function(){
+                alert("You win!");},100);
             wins++
             $("#gameResults #wins").text("Wins: " + wins)
         }
         else if (sum > randomNumber) {
-            alert("You lose")
+            setTimeout(function(){
+                alert("You lose!");},100);
             losses++
             $("#gameResults #loss").text("Losses: " + losses)
 
