@@ -58,6 +58,7 @@ $(document).ready(function () {
                 alert("You lose!");},100);
             losses++
             $("#gameResults #loss").text("Losses: " + losses)
+            setTimeout(reset, 101);
 
         }
     }
